@@ -37,11 +37,20 @@ elif gender == ('Female'):
     print(f"Hello Ms {name}. \n")
 time.sleep(2)
 
-age = int(input("How old are you? \n>> "))
-while age =="":
-    time.sleep(1)
-    age = int(input("Please enter your age? \n>> "))
+
+
+while True:
+    age_input = input("How old are you? \n>> ").strip()
+
+    if age_input.isdigit():
+        age = int(age_input)
+        break
+
+    else:
+        print("Plese enter your age \n")
 time.sleep(1)
+    
+
 
 if age in range (13, 20):
     print("Still a teenager, cool. \n")
