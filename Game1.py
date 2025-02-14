@@ -1,0 +1,1 @@
+print("You are approached by a stranger holding an envelope")
